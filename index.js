@@ -19,6 +19,6 @@ server.use(cors({ origin: "*" })); // Allow requests from any origin
 server.use("/products", Router.PoroductRouter); // Fixed typo here
 
 // Start the server
-server.listen(8080, () => {
+server.listen(process.env.POST, () => {
   console.log("Server started on port 8080");
 });
