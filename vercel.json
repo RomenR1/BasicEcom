@@ -9,15 +9,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "build/"
-    },
-    {
-      "src": "produts/(.*)",
       "dest": "index.js"
     },
     {
-      "src": "/produts",
-      "dest": "index.js"
+      "src": "/",
+      "dest": "dist/index.js"
     }
   ]
 }
