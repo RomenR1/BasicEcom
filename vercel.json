@@ -21,7 +21,7 @@
     },
     {
       "src": "/produts/(.+)",
-      "dest": "index.js"
+      "dest": "index.js/$1"
     }
   ]
 }
