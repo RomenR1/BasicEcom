@@ -16,7 +16,7 @@
       "dest": "dist/index.js"
     },
     {
-      "src": "produts/",
+      "src": "produts/(.*)",
       "dest": "index.js"
     }
   ]
