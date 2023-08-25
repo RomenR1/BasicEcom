@@ -1,13 +1,13 @@
 // Routes using imported controller functions
 const express = require("express");
-const ProductController = require("../method");
+const ProductController = require("../controller/method");
 const PoroductRouter = express.Router();
 
-PoroductRouter.get("/", ProductController.get)
-  .get("/:id", ProductController.specific)
-  .post("/", ProductController.create)
-  .put("/:id", ProductController.replece)
-  .patch("/:id", ProductController.update)
-  .delete("/:id", ProductController.deleted);
+PoroductRouter.get("/", ProductController.getProducts)
+  .post("/", ProductController.createProduct)
+  .get("/:id", ProductController.getProductById)
+  .put("/:id", ProductController.replaceProduct)
+  .patch("/:id", ProductController.updateProduct)
+  .delete("/:id", ProductController.deleteProduct);
 
 exports.PoroductRouter = PoroductRouter;

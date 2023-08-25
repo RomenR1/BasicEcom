@@ -8,20 +8,15 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "dist/"
+      "src": "/(.*\\.(js|css|woff|woff2|ttf|eot|png|jpg|jpeg|gif|ico|json|svg))",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      },
+      "dest": "/dist/$1"
     },
     {
       "src": "/",
-      "dest": "dist/index.js"
-    },
-    {
-      "src": "/produts",
-      "dest": "index.js"
-    },
-    {
-      "src": "/produts/(.+)",
-      "dest": "index.js/$1"
+      "dest": "/index.js"
     }
   ]
 }

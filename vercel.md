@@ -1,0 +1,27 @@
+{
+"version": 2,
+"builds": [
+{
+"src": "index.js",
+"use": "@vercel/node"
+}
+],
+"routes": [
+{
+"src": "/(.*)",
+"dest": "dist/"
+},
+{
+"src": "/",
+"dest": "dist/index.js"
+},
+{
+"src": "/produts",
+"dest": "index.js"
+},
+{
+"src": "/produts/(.*)",
+"dest": "index.js"
+}
+]
+}
