@@ -8,11 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/produts",
-      "dest": "index.js"
-    },
-    {
-      "src": "/produts/(.*)",
+      "src": "/(.*)",
       "dest": "index.js"
     },
     {
@@ -20,8 +16,8 @@
       "dest": "dist/index.js"
     },
     {
-      "src": "/(.+)",
-      "dest": "dist/$1"
+      "src": "produts/(.*)",
+      "dest": "index.js"
     }
   ]
 }
